@@ -1,0 +1,13 @@
+1.  GENERATE A LIST BY COPYING AND PASTING FROM ROSTER THAT HAS FORMAT: <LASTNAME>,<FIRST NAME> <MIDDLE/PREFIX> ON ITS OWN LINE
+-Example:  Doe, Ryan John
+
+2.  FORMAT THE LIST USING "List_Formatter.bat".  This will turn each name into <LASTNAME>.<FIRSTNAME> so it can be processed by "Remove_Duplicate_Names.bat" and
+"Move_Member_Folder.bat"
+
+3.  Remove names that are duplicates from the list because these have to be done manually.  "Find_Duplicates.bat" maintains a list of duplicates based on 
+"global_list_MAIN.txt".
+
+4.  Your list should now be "<ORG_NAME>_Formatted_Cleaned.txt".
+
+5.  Edit "Move_Member_Folder.bat".  Set "namelist" to the formatted and cleaned alpha roster list that you are moving folders for.  Set "orgfolder" to the
+ organization's folder (IMPORTANT).  Run "Move_Member_Folder.bat", copy stats to your stats file to track your performance.
